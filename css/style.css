@@ -14,64 +14,6 @@
 /*
 style navbar
 */
-.logo{
-	display: flex;
-	height:90vh;
-	align-items: center;
-	text-align:center;
-	justify-content: center;
-	margin: -60px;
-}
-.logo::before{
-	content: "";
-	margin: 52px;
-    margin-left: -820px;
-	position: absolute;
-	bottom: 45px;
-	width: 180px;
-	height:3px;
-	background: crimson;
-	transform: translateX(-150);
-}
-.logo::after{
-	content: "";
-	margin: -52px;
-    margin-left: 97px;
-	position: absolute;
-	bottom: 150px;
-	width: 180px;
-	height:3px;
-	background: crimson;
-	transform: translateX(-150);
-}
-.logo ul{
-	display: flex;
-	margin-top: 533px;
-    margin-left: -366px;
-}
-.logo ul li{
-	position: relative;
-	display: block;
-	color:#666;
-	font-size:20px;
-	height:50px;
-	width:50px;
-	background: #171515;
-	line-height: 50px;
-	border-radius: 50%;
-	margin: 0 15px;
-	cursor: pointer;
-	
-}
-.logo .ul::before{
-	content: "";
-	position: absolute;
-	bottom: 0px;
-	width: 180px;
-	height:3px;
-	background: crimson;
-	transform: translateX(-150);
-}
 .navbar{
     position: fixed;
     width: 100%;
@@ -131,6 +73,41 @@ style navbar
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+/*Social Media icons*/
+.social-media{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+    margin-top: 68px;
+	border-radius: 50%;
+}
+.social-media a{
+	height: 69px;
+    width: 69px;
+    background-color: #161b22;
+    border-radius: 61px;
+    text-align: center;
+    margin: 10px;
+    line-height: 83px;
+}
+.social-media a i{
+	transition: all 0.3s linear
+}
+.social-media a:hover i{
+	transform: scale(1.4)
+}
+.fa-github{
+	color: black;
+}
+.fa-linkedin{
+	color:#0074b1;
+}
+.fa-facebook{
+	color:#1b75f9;
+}
+.fa-instagram{
+	color:#644e3e;
 }
 /*
 style home navbar
@@ -367,34 +344,6 @@ section{
 .right {
   left: 50%;
 }
-
-/* Add arrows to the left container (pointing right) 
-.container.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
- Add arrows to the right container (pointing left) */
-/*.container.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}*/
 
 /* Fix the circle for containers on the right side */
 .right::after {
@@ -974,6 +923,15 @@ Contact Styling
         font-size: 23px;
         padding: 10px 30px;
     }
+	.social-media a {
+    height: 54px;
+    width: 54px;
+    background-color: #161b22;
+    border-radius: 54px;
+    text-align: center;
+    margin: 10px;
+    line-height: 68px;
+	}
 }
 
 @media (max-width: 500px) {
@@ -1029,6 +987,15 @@ Contact Styling
 	}
 	.exp-content h3{
 	font-size: 14px;
+	}
+	.social-media a {
+    height: 54px;
+    width: 54px;
+    background-color: #161b22;
+    border-radius: 54px;
+    text-align: center;
+    margin: 10px;
+    line-height: 68px;
 	}
 }
 @media (max-width: 368px) {
